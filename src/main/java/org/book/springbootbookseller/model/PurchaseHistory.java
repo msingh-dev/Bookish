@@ -25,6 +25,5 @@ public class PurchaseHistory {
 
     @Column(name = "purchase_time", nullable = false)
     private LocalDateTime purchaseTime;
-
-
+    
 }

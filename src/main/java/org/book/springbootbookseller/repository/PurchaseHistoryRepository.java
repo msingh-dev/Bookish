@@ -14,6 +14,6 @@ public interface PurchaseHistoryRepository extends JpaRepository<PurchaseHistory
             "b.title as Title, ph.price as Price, ph.purchaseTime as PurchaseTime " +
             "from PurchaseHistory ph left join Book b on b.id = ph.bookId " +
     "where ph.userId = :userId")
-    List<IPurchaseItem> findAllPurchasesOfUser(@Param("userId") String userId);
+    List<IPurchaseItem> findAllPurchasesOfUser(@Param("userId") Long userId);
 
 }
