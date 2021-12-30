@@ -1,8 +1,11 @@
 package org.book.springbootbookseller.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+@Data
 @Entity
 @Table(name = "purchase_history")
 public class PurchaseHistory {
